@@ -108,9 +108,11 @@ header h1{
     text-align:center;
 }
 
-header p{
+header button{
 	border:1px solid black;
-	padding:1% 6%;
+    padding:1% 6%;
+    background:white;
+    cursor:pointer;
 }
 
 .top-content{
@@ -136,4 +138,33 @@ header p{
 footer{
 	margin:4% 0%;
 	text-align:center;
+}
+
+/* Responsive Style - Tablet */ 
+
+@media screen and (max-width:767px){
+    .container{
+        margin:0%;
+    }
+    nav{
+        flex-direction:column-reverse;
+    }
+
+    .links{
+        justify-content:space-around;
+        width:100%;
+        padding:4%;
+    }
+
+    header img{
+        display:none;
+    }
+
+    header div{
+        margin-left: 25%;
+    }
+
+    header h1{
+        width:90%;
+    }
 }
