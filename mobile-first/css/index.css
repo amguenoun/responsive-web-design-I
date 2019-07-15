@@ -207,6 +207,11 @@ footer{
 	.top-content{
 		display:flex;
 		flex-direction:row;
+		justify-content:space-between;
+	}
+
+	.top-content div{
+		width:45%;
 	}
 
 	.bottom-content{
@@ -216,5 +221,35 @@ footer{
 	}
 	.bottom-content div{
 		width:32%;
+	}
+}
+
+/* Desktop Styles */
+@media (min-width:800px){
+	nav{
+		flex-direction:row;
+		justify-content:space-between;
+	}
+	
+	.logo-div{
+		width:30%;
+	}
+
+	header img{
+		display:inline-block;
+	}
+	header{
+		flex-direction:row;
+		margin:0%;
+		width:100%;
+		border:none;
+	}
+
+	.top-content{
+		border-top:1px solid black;
+	}
+
+	.top-content div{
+		width:48%;
 	}
 }
