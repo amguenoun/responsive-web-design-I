@@ -165,7 +165,6 @@ footer{
 
 /* Responsive Style - Tablet */ 
 
-
 @media (max-width: 800px) {
 	.container{
         margin:0% 4%;
@@ -196,5 +195,51 @@ footer{
 	}
 	.more-info ul{
 		margin-bottom:3%;
-	}
+    }
+    
+    /* Responsive Style - Mobile */
+
+    @media screen and (max-width:500px){
+        nav div{
+            width:100%;
+          }
+      
+          .logo-div{
+              border-bottom:1px solid black;
+          }
+      
+          nav img{
+              margin-left:32%;
+              padding-bottom:3%;
+          }
+      
+          .links{
+              flex-direction:column;
+              justify-content: center;
+              align-items:center;
+              padding:0%;
+          }
+      
+          .links a{
+              width:100%;
+              text-align:center;
+              padding:4% 0%;
+              border-bottom:1px solid black;
+          }
+      
+        header img{
+            display:none;
+        }
+
+        .top{
+            padding-bottom:8%;
+        }
+
+        .mid-page{
+            flex-direction:column;
+        }
+        .mid-page div{
+            width:100%;
+        }
+    }
 }
