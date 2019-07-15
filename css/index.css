@@ -206,5 +206,41 @@ footer{
         border-bottom:1px solid black;
     }
 
-    
+    header h1{
+        width:120%;
+    }
+
+    .top-content{
+        flex-direction:column;
+        width:95%;
+        margin-left:2.5%;
+    }
+
+    .top-content div{
+        margin-top: 4%;
+    }
+
+    .middle-img{
+        width:95%;
+        margin:0% 2.5%;
+    }
+
+    .bottom-content{
+        flex-direction:column;
+        width:95%;
+        margin-left:2.5%;
+    }
+
+    .bottom-content div{
+        margin-bottom:4%;
+    }
+
+    .contact{
+        width:95%;
+        margin-left:2.5%;
+    }
+
+    .contact p{
+        margin:3% 0%;
+    }
 }
