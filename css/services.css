@@ -91,59 +91,82 @@ nav{
 header{
 	display:flex;
 	margin-top:6%;
-	margin-bottom:10%;
+	margin-bottom:7%;
+}
+header img{
+	width:100%;
 }
 
-header div{
-	display:flex;
-	width:50%;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-header h1{
-    font-size: 470%;
-    width:60%;
-    text-align:center;
-}
-
-header button{
-	border:1px solid black;
-    padding:1% 6%;
-    background:white;
-    cursor:pointer;
-}
-
-.top-content{
-	display:flex;
-	border-top: 1px solid black;
-	padding:4% 0%;
-}
-
-.bottom-content{
+.top{
 	display:flex;
 	border-bottom:1px solid black;
-	padding: 4% 0%;
+	flex-direction:column;
+	padding-bottom:3%;
 }
 
-.contact{
-	margin-top:5%;
+.top h1{
+	font-size:200%;
 }
 
-.contact p{
-    margin:1% 0%;
+.mid-page{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	border-bottom:1px solid black;
+	padding-bottom: 1%;
+}
+
+.box{
+	width:40%;
+	background-color:#f4f3f4;
+	margin:3% 0%;
+	border: 1px solid black;
+}
+
+.box h2{
+	margin:4% 3%;
+}
+
+.box p{
+	margin: 0% 3%;
+}
+
+.btn {
+	border:1px solid black;
+	background:white;
+	margin: 4% 3% !important;
+    width: 30%;
+    text-align: center;
+    padding:1%;
+    border-radius:8px;
+}
+
+.more-info{
+	margin-top:4%;
+	display:flex;
+	justify-content: space-between;
+	margin-bottom:5%;
+}
+
+.more-info div h2{
+	margin-bottom:5%;
+}
+
+ul{
+	list-style-type:square;
+	margin-left: 3%;
+	margin-top: 5%;
 }
 
 footer{
-	margin:4% 0%;
 	text-align:center;
+	margin-bottom:5%;
 }
 
 /* Responsive Style - Tablet */ 
 
-@media screen and (max-width:800px){
-    .container{
+@media (max-width: 800px) {
+	.container{
         margin:0% 4%;
     }
     nav{
@@ -157,10 +180,6 @@ footer{
         padding:4%;
     }
 
-    header img{
-        display:none;
-    }
-
     header div{
         margin-left: 25%;
     }
@@ -169,78 +188,58 @@ footer{
         width:90%;
     }
 
-
-}
-
-/* Responsive Style - Mobile */
-
-@media screen and (max-width:500px){
-    .container{
-        margin:0%;
-    }
-
-    nav div{
-      width:100%;
-    }
-
-    .logo-div{
-        border-bottom:1px solid black;
-    }
-
-    nav img{
-        margin-left:32%;
-        padding-bottom:3%;
-    }
-
-    .links{
+	.more-info{
         flex-direction:column;
-        justify-content: center;
         align-items:center;
-        padding:0%;
+        justify-content:center;
+	}
+	.more-info ul{
+		margin-bottom:3%;
     }
+    
+    /* Responsive Style - Mobile */
 
-    .links a{
-        width:100%;
-        text-align:center;
-        padding:4% 0%;
-        border-bottom:1px solid black;
-    }
+    @media screen and (max-width:500px){
+        nav div{
+            width:100%;
+          }
+      
+          .logo-div{
+              border-bottom:1px solid black;
+          }
+      
+          nav img{
+              margin-left:32%;
+              padding-bottom:3%;
+          }
+      
+          .links{
+              flex-direction:column;
+              justify-content: center;
+              align-items:center;
+              padding:0%;
+          }
+      
+          .links a{
+              width:100%;
+              text-align:center;
+              padding:4% 0%;
+              border-bottom:1px solid black;
+          }
+      
+        header img{
+            display:none;
+        }
 
-    header h1{
-        width:120%;
-    }
+        .top{
+            padding-bottom:8%;
+        }
 
-    .top-content{
-        flex-direction:column;
-        width:95%;
-        margin-left:2.5%;
-    }
-
-    .top-content div{
-        margin-top: 4%;
-    }
-
-    .middle-img{
-        width:95%;
-        margin:0% 2.5%;
-    }
-
-    .bottom-content{
-        flex-direction:column;
-        width:95%;
-        margin-left:2.5%;
-    }
-
-    .bottom-content div{
-        margin-bottom:4%;
-    }
-
-    .contact{
-        width:95%;
-        margin-left:2.5%;
-    }
-
-    .contact p{
-        margin:3% 0%;
+        .mid-page{
+            flex-direction:column;
+        }
+        .mid-page div{
+            width:100%;
+        }
     }
 }
